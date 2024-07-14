@@ -1,0 +1,24 @@
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 20px solid gray;
+}
+@media (min-width: 901px) {
+    canvas {
+        width: 900px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+    canvas {
+        width: 80vw;
+        height: calc(80vw * (600 / 900));
+    }
+}
+@media (max-width: 600px) {
+    canvas {
+        width: 100vw;
+        height: calc(100vw * (600 / 900));
+    }
+}
